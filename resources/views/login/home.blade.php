@@ -10,7 +10,7 @@
 <body>
   <div class="container">
     <div class="mt-5">
-      <x-alert type="success" :session="session"/>
+      <x-alert type="success" :session="session('login')"/>
       <h3>プロフィール</h3>
       <ul>
         <li>名前：{{ Auth::user()->name }}</li>
